@@ -45,8 +45,7 @@ var updateIcon = function (status) {
     imageData: createIcon(status.color)
   })
 
-  if (status.priority > 0)
-    chrome.browserAction.setBadgeText({ text: '!' })
+  chrome.browserAction.setBadgeText({ text: status.priority > 0 ? '!' : '' })
 }
 
 var getStatus = function (incidents) {
