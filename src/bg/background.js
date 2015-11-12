@@ -73,8 +73,8 @@ var refresh = function () {
     .then(getStatus)
     .then(updateIcon)
 
-  var 10_MINS_MS = 1000 * 60 * 10
-  setTimeout(refresh, 10_MINS_MS)
+  var TEN_MINS_MS = 1000 * 60 * 10
+  setTimeout(refresh, TEN_MINS_MS)
 }
 
 refresh()
